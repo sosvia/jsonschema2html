@@ -16,7 +16,7 @@
       "email": "shawn@wcst.com"
     }
   ],
-  "main": "./lib/schema2html",
+  "main": "./lib/index",
   "keywords": [],
   "dependencies": {
     "handlebars": "~2.0.0",
