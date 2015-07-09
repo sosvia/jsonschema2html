@@ -8,34 +8,48 @@
     "type": "git",
     "url": "https://github.com/shawnhilgart/jsonschema2html.git"
   },
-  "private":false,
+  "private": false,
   "test": "make test",
-  "contributors": [ 
+  "contributors": [
     {
       "name": "Shawn Hilgart",
       "email": "shawn@wcst.com"
-    } 
+    }
   ],
   "main": "./lib/schema2html",
   "keywords": [],
-  "dependencies" : {
-    "handlebars":"~2.0.0",
-    "async":"*",
-    "lodash":"*",
-    "request":"*"
+  "dependencies": {
+    "handlebars": "~2.0.0",
+    "async": "*",
+    "lodash": "*",
+    "request": "*"
   },
   "analyze": false,
   "devDependencies": {
-    "mocha":"*",
-    "benchmark":"*"
+    "benchmark": "*",
+    "jspm": "^0.15.7",
+    "mocha": "*"
   },
-  "bundledDependencies": [
-  ],  
+  "bundledDependencies": [],
   "license": "MIT",
   "engines": {
     "node": ">=0.8"
   },
-  "scripts":{
-    "test":"mocha"
+  "scripts": {
+    "test": "mocha"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "async": "bower:async@^1.3.0",
+      "browser-request": "npm:browser-request@^0.3.3",
+      "handlebars": "github:components/handlebars.js@^3.0.3",
+      "lodash": "npm:lodash@^3.10.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.0.12",
+      "babel-runtime": "npm:babel-runtime@^5.0.12",
+      "core-js": "npm:core-js@^0.8.1"
+    }
   }
 }
