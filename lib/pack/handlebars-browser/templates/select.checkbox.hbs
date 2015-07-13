@@ -1,0 +1,7 @@
+<div class="select-holder">
+{{#if label}}<label for='{{id}}'>{{label}}{{#if required}} <small>*required</small>{{/if}}</label>{{/if}}
+{{#datasrc}}
+	<label><input type="checkbox" value="{{value}}" /> {{key}}</label>
+{{/ datasrc}}
+{{#if pattern}}<small class="error">{{errorMsg}}</small>{{else}}{{#if required}}<small class="error">{{errorMsg}}</small>{{/if}}{{/if}}
+</div>
